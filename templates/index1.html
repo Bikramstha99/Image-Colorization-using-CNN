@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style1.css')}}">
+    <script src="app.js"></script>
+    <title>Image Colorization</title>
+</head>
+
+<body>
+    <!-- Header Starts from here -->
+    <header id="header">
+        <div class="right-header" >Color<span>Lab</span>.ai</div>
+        <div class="left-header">
+            <nav>
+                <ul>
+                    <li class="active-btn"><a href="">Home</a></li>
+                    <li><a href="">Colorize Image</a></li>
+                    <li><a href="">Downloads</a></li>
+                    <li><a href="/team">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Ends here -->
+    <!-- Section Starts here -->
+    <section class="sec-container">
+        <div class="col-2 flex">
+            <div class="row-2 flex">
+                <h2>Colorize your <span>B/W</span> Photos Using AI.</h2>
+            </div>
+        
+            <div class="row-2 flex"><img src="/static/webpic/pic1.jpg" alt="error"></div>
+        </div>
+        <div class="col-2 flex-files">
+            <div class="form-container flex">
+                <form method="post" action="/" enctype="multipart/form-data">
+                    <input type="file" name="file" autocomplete="off" required>
+            </div>
+            <div class="row-2 flex"><button>Submit</button></div>
+        </div>
+    </form>
+    </section>
+    <footer class="flex">
+        <p>All Right Reserved. 2022</p>
+    </footer>
+</body>
+
+</html>
